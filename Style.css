@@ -1,0 +1,133 @@
+/* فونت Ubuntu از پوشه محلی */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* استایل کلی */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* هدر جذاب */
+.hero {
+    background: linear-gradient(to right, #3f3f3f, #555);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+}
+
+.hero a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero a:hover {
+    color: #fff;
+}
+
+/* دکمه لینک گیت */
+.btn-github {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #ffcc00;
+    color: #222;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    font-size: 1rem;
+}
+
+.btn-github:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* محتوای اصلی */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    border-right: 5px solid #444;
+    padding-right: 10px;
+    color: #222;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* مهارت‌ها */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.skills span {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.skills span:hover {
+    background-color: #ffcc00;
+    color: #222;
+    font-weight: 500;
+}
+
+/* فوتر */
+.footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+    .container {
+        padding: 1rem 1.5rem;
+    }
+}
